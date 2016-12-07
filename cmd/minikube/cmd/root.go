@@ -83,7 +83,7 @@ var RootCmd = &cobra.Command{
 		}
 
 		if enableUpdateNotification {
-			notify.MaybePrintUpdateTextFromGithub(os.Stdout)
+			notify.MaybePrintUpdateTextFromGithub(os.Stderr)
 		}
 		if enableKubectlDownloadMsg {
 			util.MaybePrintKubectlDownloadMsg()
